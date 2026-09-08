@@ -6,7 +6,7 @@
   build the model structures from `create_power_domain` /
   `create_supply_port` / `create_supply_net` / `connect_supply_net` /
   `add_power_state` / `set_isolation` / `set_level_shifter` script lines."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [upf.domain :as domain]
             [upf.supply :as supply]
             [upf.power-state :as power-state]
@@ -61,7 +61,7 @@
   "`\"off\"` (any case) -> `:off`; otherwise the string parsed as a
   floating-point voltage, falling back to the raw string if unparseable."
   [s]
-  (if (= "off" (str/lower-case s))
+  (if (= "off" (str/lower s))
     :off
     #?(:clj (try (Double/parseDouble s) (catch Exception _ s))
        :cljs (let [n (js/parseFloat s)] (if (js/isNaN n) s n)))))

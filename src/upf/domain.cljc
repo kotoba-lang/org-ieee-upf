@@ -4,7 +4,7 @@
   longest-prefix instance-to-domain lookup mirroring UPF's nested-scope
   semantics (an instance under a more deeply nested domain's scope belongs
   to that domain, not a less specific enclosing ancestor domain)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (defn create-power-domain
   "Build a power domain map: `name` is the domain identifier, `scope` is a
