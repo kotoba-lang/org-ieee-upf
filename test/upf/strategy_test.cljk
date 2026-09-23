@@ -1,5 +1,5 @@
 (ns upf.strategy-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [upf.strategy :as strategy]))
 
 (deftest set-isolation-and-level-shifter-shape

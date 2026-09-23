@@ -1,5 +1,5 @@
 (ns upf.parser-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [upf.parser :as parser]
             [upf.domain :as domain]
             [upf.supply :as supply]

@@ -1,5 +1,5 @@
 (ns upf.supply-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [upf.supply :as supply]))
 
 (deftest create-supply-port-and-net-shape

@@ -1,5 +1,5 @@
 (ns upf.power-state-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [upf.power-state :as power-state]))
 
 (deftest add-power-state-shape
